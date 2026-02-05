@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# Travel Website - Fainy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a clean and elegant travel website landing page designed for Fainy, a travel client from Indonesia.  
+The website features a soft lavender color palette for a calm, relaxing, and modern travel experience.
 
-Currently, two official plugins are available:
+## Features
+- Hero section with call-to-action
+- Popular destinations showcase
+- About section explaining travel services
+- Responsive design using Tailwind CSS
+- Built with React and Vite for fast development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Stack
+- React 18
+- Tailwind CSS 3
+- Vite
+- JavaScript (ES6+)
 
-## React Compiler
+## Color Palette
+- Background: `#F3E8FF` (Lavender)
+- Primary Accent: `#D6BCFA`
+- Secondary Accent: `#B794F4`
+- Text: `#4A5568`
+- Button Hover: `#9F7AEA`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev`
+3. Open `http://localhost:5173` in your browser
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is perfect for a beginner-friendly, soft, and minimal travel website landing page.
